@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>Grapher</title>
+    </head>
+    <body style="background-color:black">
+        <canvas width="600" height="600" style="background-color:white;float:left;margin-right:20px;">Canvas not supported.</canvas>
+        <span style="text-align:center;">
+            <button id="in">Zoom in</button><br>
+            <button id="out">Zoom out</button><br><br>
+            <button id="up">Up</button><br>
+            <button id="left">Left</button>
+            <button id="right">Right</button><br>
+            <button id="down">Down</button><br><br>
+        </span>
+        <ul style="margin:0;padding:0;list-style:none;">
+            <ol style="color:rgb(255,0,0);">y<sub>1</sub>=<input type="text" class="equation" value=""/> <span id="error1"></span></ol>
+            <ol style="color:rgb(0,255,0);">y<sub>2</sub>=<input type="text" class="equation" value=""/> <span id="error2"></span></ol>
+            <ol style="color:rgb(0,0,255);">y<sub>3</sub>=<input type="text" class="equation" value=""/> <span id="error3"></span></ol>
+            <ol style="color:rgb(255,255,0);">y<sub>4</sub>=<input type="text" class="equation" value=""/> <span id="error4"></span></ol>
+            <ol style="color:rgb(0,255,255);">y<sub>5</sub>=<input type="text" class="equation" value=""/> <span id="error5"></span></ol>
+            <ol style="color:rgb(255,0,255);">y<sub>6</sub>=<input type="text" class="equation" value=""/> <span id="error6"></span></ol>
+        </ul>
+        <ul style="color:white;">
+            <ol>Zoom: <span id="zoom"></span></ol>
+            <ol>X-shift: <span id="xshift"></span></ol>
+            <ol>Y-shift: <span id="yshift"></span></ol>
+            <ol><button id="resetpos">Reset Position</button></ol>
+        </ul>
+        <script src="js/grapher.js"></script>
+    </body>
+</html>
